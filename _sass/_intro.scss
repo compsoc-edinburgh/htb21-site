@@ -21,6 +21,10 @@
         align-items: center;
         justify-content: center;
 
+        @include media-mobile {
+            display: none;
+        }
+
     }
 
     > .intro-block__main {
