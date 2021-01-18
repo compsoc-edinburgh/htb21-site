@@ -1,0 +1,42 @@
+@import "colors";
+
+.sponsors {
+    background-color: $sponsor__background;
+    color: black;
+
+    > h1 {
+        text-align: center;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.gold, .partner {
+    display: flex;
+    flex-direction: column;
+    @include media-desktop {
+        flex-direction: row;
+    }
+    align-items: center;
+    justify-content: center;
+}
+
+.gold > img {
+    width: 85vw;
+    @include media-desktop {
+        width: 35vw;
+    }
+    height: auto;
+    margin: 0.5em 1em;
+}
+
+.partner > img {
+    width: 55vw;
+    @include media-desktop {
+        width: 25vw;
+    }
+    height: auto;
+    margin: 0.5em 1em;
+}
