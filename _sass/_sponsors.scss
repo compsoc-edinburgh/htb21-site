@@ -13,7 +13,7 @@
     }
 }
 
-.gold, .partner {
+.gold, .silver, .partner {
     display: flex;
     flex-direction: column;
     @include media-desktop {
@@ -31,6 +31,24 @@
     height: auto;
     margin: 0.5em 1em;
 }
+
+.silver > img {
+    width: 65vw;
+    @include media-desktop {
+        width: 35vw;
+    }
+    height: auto;
+    margin: 0.5em 1em;
+
+    &.silver__gresearch {
+        width: 25vw;
+        @include media-desktop {
+            width: 15vw;
+        }
+
+    }
+}
+
 
 .partner > img {
     width: 55vw;
