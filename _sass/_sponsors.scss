@@ -9,6 +9,11 @@
 
         &:first-child {
             margin-top: 0;
+
+            padding-top: 1em;
+            @include media-desktop {
+                padding-top: 0;
+            }
         }
     }
 }
@@ -23,25 +28,25 @@
     justify-content: center;
 }
 
-.platinum > img {
+.platinum img {
     width: 85vw;
     @include media-desktop {
         width: 50vw;
     }
     height: auto;
-    margin: 1em 3em;
+    margin: 1em 0;
 }
 
-.gold > img {
+.gold img {
     width: 80vw;
     @include media-desktop {
         width: 35vw;
     }
     height: auto;
-    margin: 1em 3em;
+    margin: 1em 0;
 }
 
-.silver > img {
+.silver img {
     width: 65vw;
     @include media-desktop {
         width: 35vw;
@@ -59,7 +64,7 @@
 }
 
 
-.partner > img {
+.partner img {
     width: 55vw;
     @include media-desktop {
         width: 25vw;
