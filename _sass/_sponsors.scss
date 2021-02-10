@@ -13,7 +13,7 @@
     }
 }
 
-.gold, .silver, .partner {
+.platinum, .gold, .silver, .partner {
     display: flex;
     flex-direction: column;
     @include media-desktop {
@@ -23,8 +23,17 @@
     justify-content: center;
 }
 
-.gold > img {
+.platinum > img {
     width: 85vw;
+    @include media-desktop {
+        width: 50vw;
+    }
+    height: auto;
+    margin: 1em 3em;
+}
+
+.gold > img {
+    width: 80vw;
     @include media-desktop {
         width: 35vw;
     }
