@@ -71,4 +71,13 @@
     }
     height: auto;
     margin: 0.5em 1em;
+
+    &.partner__stickermule {
+        height: 125px;
+        width: auto;
+        @include media-desktop {
+            height: 175px;
+            width: auto;
+        }
+    }
 }
